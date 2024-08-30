@@ -14,55 +14,33 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-<<<<<<< HEAD
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>80</y>
-=======
    <widget class="QPushButton" name="quitButton">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>150</y>
->>>>>>> 9c0b0f6 (Added quit button)
+      <x>610</x>
+      <y>170</y>
       <width>80</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
-<<<<<<< HEAD
-     <string>PushButton</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>180</y>
-      <width>80</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>PushButton</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>280</y>
-      <width>80</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>PushButton</string>
-=======
      <string>Quit</string>
->>>>>>> 9c0b0f6 (Added quit button)
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>271</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Put items here.</string>
+    </property>
+    <property name="placeholderText">
+     <string>Put items here, one on each line.</string>
     </property>
    </widget>
   </widget>
