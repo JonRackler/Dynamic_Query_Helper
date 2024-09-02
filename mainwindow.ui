@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="quitButton">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>170</y>
+      <x>650</x>
+      <y>480</y>
       <width>80</width>
       <height>25</height>
      </rect>
@@ -27,20 +27,86 @@
      <string>Quit</string>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="textBrowser">
+   <widget class="QTextEdit" name="item_list">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>40</y>
-      <width>271</width>
-      <height>281</height>
+      <x>60</x>
+      <y>90</y>
+      <width>251</width>
+      <height>361</height>
      </rect>
     </property>
-    <property name="toolTip">
-     <string>Put items here.</string>
-    </property>
     <property name="placeholderText">
-     <string>Put items here, one on each line.</string>
+     <string>Enter item numbers here, one on each line.</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="output_box">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>90</y>
+      <width>251</width>
+      <height>361</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>230</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="enter_table">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="enter_line">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>60</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="table_label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>31</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Table</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="field_label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>60</y>
+      <width>31</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Field</string>
     </property>
    </widget>
   </widget>
