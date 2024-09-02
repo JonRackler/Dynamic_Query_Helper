@@ -50,7 +50,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="generate_button">
     <property name="geometry">
      <rect>
       <x>360</x>
@@ -60,7 +60,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Generate</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="enter_table">
