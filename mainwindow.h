@@ -20,5 +20,9 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+private slots:
+    void makeQuery();
+    void clearQuery();
 };
 #endif // MAINWINDOW_H
