@@ -36,6 +36,9 @@
       <height>361</height>
      </rect>
     </property>
+    <property name="acceptRichText">
+     <bool>false</bool>
+    </property>
     <property name="placeholderText">
      <string>Enter item numbers here, one on each line.</string>
     </property>
@@ -73,7 +76,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="enter_line">
+   <widget class="QLineEdit" name="enter_field">
     <property name="geometry">
      <rect>
       <x>100</x>

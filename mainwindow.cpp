@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include <QRegularExpression>
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -20,10 +22,33 @@ MainWindow::~MainWindow()
 
 void MainWindow::makeQuery()
 {
-    ui->output_box->setPlainText("Hello there");
+    //text is the propery that holds the text of a QLineEdit box
+    //plainText is the property that holds the text of the QTextEdit box
+
+    QStringList outputList = getItems(*ui->item_list);
+
+    QString table = ui->enter_table->text();
+    QString field = ui->enter_field->text();
+    for (auto& str : outputList)
+    {
+        str.prepend(table + "." + field + " = \"");
+        str.append("\"");
+    }
+    QString resultStr = "(";
+    resultStr.append(outputList.join(" OR "));
+    resultStr.append(")");
+    ui->output_box->setPlainText(resultStr);
 }
 
 void MainWindow::clearQuery()
 {
     ui->output_box->clear();
+}
+
+QStringList MainWindow::getItems(const QTextEdit &textEdit)
+{
+    QString data = textEdit.toPlainText();
+    QStringList strList = data.split("\n", Qt::SkipEmptyParts);
+    //QString str = data.replace(QString("\n"), QString(" OR "));
+    return strList;
 }
