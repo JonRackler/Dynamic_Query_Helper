@@ -29,13 +29,16 @@ void MainWindow::makeQuery()
 
     QString table = ui->enter_table->text();
     QString field = ui->enter_field->text();
+    QString operator_string = ui->operator_LE->text();
+    QString log_operator = ui->log_oper_LE->text();
+
     for (auto& str : outputList)
     {
-        str.prepend(table + "." + field + " = \"");
+        str.prepend(table + "." + field + " " + operator_string + " \"");
         str.append("\"");
     }
     QString resultStr = "(";
-    resultStr.append(outputList.join(" OR "));
+    resultStr.append(outputList.join(" " + log_operator + " "));
     resultStr.append(")");
     ui->output_box->setPlainText(resultStr);
 }
